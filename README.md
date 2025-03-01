@@ -7,14 +7,50 @@ We evaluate the proposed method on three of the most widely used crowd counting 
 
 ## Getting Started🚀
 ### 1. Data Preparation
-We use a list file to collect all the input images and their ground truth annotations in a counting dataset. When your dataset is organized as recommended in the following, the format of this list file is defined as:
+First, prepare the dataset. Then, run the following command to generate the corresponding ground truth density distribution maps:
+```
+python density_data_preparation/k_nearest_gaussian_kernel.py
+```
+Immediately afterward, We use a list file to collect all the input images and their ground truth annotations in a counting dataset. When your dataset is organized as recommended in the following, the format of this list file is defined as:
 ```
 train/scene01/img01.jpg train/scene01/img01.txt
 train/scene01/img02.jpg train/scene01/img02.txt
 ...
 train/scene02/img01.jpg train/scene02/img01.txt
 ```
-
+#### Dataset structures:
+```
+DATA_ROOT/
+        |->train/
+        |    |->scene01/
+        |    |->scene02/
+        |    |->...
+        |->test/
+        |    |->scene01/
+        |    |->scene02/
+        |    |->...
+        |->train.list
+        |->test.list
+        |->gt_density_map/
+        |    |->train/
+        |    |->test/  
+```
+### 2. Training
+The network can be trained using the train.py script. For training on ShanghaiTech PartA, use
+```
+CUDA_VISIBLE_DEVICES=0 python train.py --data_root $DATA_ROOT \
+    --dataset_file SHHA \
+    --epochs 3500 \
+    --lr_drop 3500 \
+    --output_dir ./logs \
+    --checkpoints_dir ./weights \
+    --tensorboard_dir ./logs \
+    --lr 0.0001 \
+    --lr_backbone 0.00001 \
+    --batch_size 8 \
+    --eval_freq 1 \
+    --gpu_id 0
+```
 ## Cite our work📝
 ```Coming soon...```
 ## License📜
