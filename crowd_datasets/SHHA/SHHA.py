@@ -11,7 +11,7 @@ class SHHA(Dataset):
         self.root_path = data_root
         self.train_lists = "train.txt"
         self.eval_list = "test.txt"
-        self.gt_density = "gt_density" 
+        self.gt_density = "gt_density_maps" 
         self.img_list_file = self.train_lists.split(',')
         if train:
             self.img_list_file = self.train_lists.split(',')
