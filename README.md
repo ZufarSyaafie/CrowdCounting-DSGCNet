@@ -31,7 +31,7 @@ DATA_ROOT/
         |    |->...
         |->train.list
         |->test.list
-        |->gt_density_map/
+        |->gt_density_maps/
         |    |->train/
         |    |->test/  
 ```
