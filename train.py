@@ -203,6 +203,6 @@ def main(args):
     print('Training time {}'.format(total_time_str))
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser('P2PNet training and evaluation script', parents=[get_args_parser()])
+    parser = argparse.ArgumentParser('DSGCNet training and evaluation script', parents=[get_args_parser()])
     args = parser.parse_args()
     main(args)
