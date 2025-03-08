@@ -4,7 +4,7 @@
 ## Datasets📚
 We evaluate the proposed method on three of the most widely used crowd counting datasets: ShanghaiTech PartA and PartB and UCF-QNRF.
 ## Experimental Results🏆
-## Comparison with State-of-the-Art Methods
+### Comparison with State-of-the-Art Methods
 
 | Method      | Venue       | Backbone     | SHTech PartA (MAE/MSE) | SHTech PartB (MAE/MSE) | UCF-QNRF (MAE/MSE) |
 |-------------|-------------|--------------|------------------------|------------------------|--------------------|
@@ -18,14 +18,17 @@ We evaluate the proposed method on three of the most widely used crowd counting 
 | Ctrans-MISN | PRAI-2022   | ViT          | 55.8 / 95.9            | 7.3 / 11.4             | 95.2 / 180.1       |
 | NDConv      | SPL-2022    | ResNet-50    | 61.4 / 104.2           | 7.8 / 13.8             | 91.2 / 165.6       |
 | AutoScale   | IJCV-2022   | VGG-16       | 65.8 / 112.1           | 8.6 / 13.9             | 104.4 / 174.2      |
-| PTCNet      | EAAI-2023   | Pyramid ViT  | 51.7 / 79.6            | 6.3 / 10.6             | 79.7 / **133.2**   |
+| PTCNet      | EAAI-2023   | Pyramid ViT  | *51.7* / 79.6          | 6.3 / 10.6             | *79.7* / **133.2** |
 | GMS         | TIP-2023    | HRNet        | 68.8 / 138.6           | 16.0 / 33.5            | 104.0 / 197.4      |
 | DMCNet      | WACV-2023   | VGG-16       | 58.5 / 84.6            | 8.6 / 13.7             | 96.5 / 164.0       |
 | VMambaCC    | arXiv-2024  | Mamba        | 51.9 / 81.3            | 7.5 / 12.5             | 88.4 / 144.7       |
-| DDRANet     | SPL-2024    | VGG-16       | 52.1 / **78.4**        | 6.9 / 10.3             | 89.2 / 146.9       |
-| CAAPN       | TPAMI-2024  | VGG-16       | 54.4 / 97.3            | **5.8** / 9.8          | 83.9 / 144.3       |
-| **Ours**    | -           | VGG-16       | **48.9** / **77.8**    | 5.9 / **9.3**          | **79.3** / 133.9   |
-**Bold** indicates the best performance; **double-asterisk (\*\*)** indicates the second-best.
+| DDRANet     | SPL-2024    | VGG-16       | 52.1 / *78.4*          | 6.9 / 10.3             | 89.2 / 146.9       |
+| CAAPN       | TPAMI-2024  | VGG-16       | 54.4 / 97.3            | **5.8** / *9.8*        | 83.9 / 144.3       |
+| **Ours**    | -           | VGG-16       | **48.9** / **77.8**    | *5.9* / **9.3**        | **79.3** / *133.9* |
+
+**Bold** indicates the best performance; *italic* indicates the second-best.
+
+
 ## Getting Started🚀
 ### 1. Data Preparation
 First, prepare the dataset. Then, run the following command to generate the corresponding ground truth density distribution maps:
