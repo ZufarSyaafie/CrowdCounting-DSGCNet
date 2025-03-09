@@ -75,7 +75,14 @@ CUDA_VISIBLE_DEVICES=0 python train.py --data_root $DATA_ROOT \
     --eval_freq 1 \
     --gpu_id 0
 ```
+### 3. Test
+You can prepare the data according to the previously mentioned dataset structures and directly use our trained weights to predict people's locations and the total crowd count (which will be displayed on the predicted images).Please run
+```
+python run_test.py
+```
 ## Cite our work📝
 ```Coming soon...```
+## Friendly reminder😊
+The repository is gradually being improved. If you need further assistance, please contact us. Feedback and suggestions are also welcome.😀
 ## License📜
 The source code is free for research and education use only. Any comercial use should get formal permission first.
