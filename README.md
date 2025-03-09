@@ -76,7 +76,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py --data_root $DATA_ROOT \
     --gpu_id 0
 ```
 ### 3. Test
-You can prepare the data according to the previously mentioned dataset structures and directly use our trained weights to predict people's locations and the total crowd count (which will be displayed on the predicted images).Please run
+You can prepare the data according to the previously mentioned dataset structures and directly use our trained weights to predict individuals' locations and the total crowd count (which will be displayed on the predicted images). Please run
 ```
 python run_test.py
 ```
