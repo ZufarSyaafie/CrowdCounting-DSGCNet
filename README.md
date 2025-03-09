@@ -68,7 +68,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py --data_root $DATA_ROOT \
     --lr_drop 3500 \
     --output_dir ./logs \
     --checkpoints_dir ./weights \
-    --tensorboard_dir ./logs \
+    --tensorboard_dir ./runs \
     --lr 0.0001 \
     --lr_backbone 0.00001 \
     --batch_size 8 \
