@@ -80,9 +80,9 @@ You can prepare the data according to the previously mentioned dataset structure
 ```
 python run_test.py
 ```
-## Cite our work📝
-```Coming soon...```
 ## Friendly reminder😊
 The repository is gradually being improved. If you need further assistance, please contact us. Feedback and suggestions are also welcome.😀
+## Cite our work📝
+```Coming soon...```
 ## License📜
 The source code is free for research and education use only. Any comercial use should get formal permission first.
