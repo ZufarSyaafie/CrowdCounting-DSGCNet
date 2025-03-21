@@ -276,7 +276,6 @@ class DSGCnet(nn.Module):
         self.density_pred = Density_pred()
         self.density_gcn = DensityGCNProcessor(k=4)
         self.feature_gcn = FeatureGCNProcessor(k=4)
-        self.alpha = nn.Parameter(torch.tensor([0.001,0.001], dtype=torch.float32, requires_grad=True))
 
     def forward(self, samples: NestedTensor):
         features = self.backbone(samples)
@@ -286,7 +285,8 @@ class DSGCnet(nn.Module):
         density = self.density_pred(features_pa)
         density_gcn_feature = self.density_gcn(density, features_pa)
         feature_gcn_feature = self.feature_gcn(features_pa)
-        feature_fl =  features_pa + self.alpha[0] * density_gcn_feature +  self.alpha[1] * feature_gcn_feature
+        feature_fl = torch.cat([features_pa, density_gcn_feature, feature_gcn_feature], 1)
+        feature_fl = self.fusion_total(feature_fl)
         regression = self.regression(feature_fl) * 100 
         classification = self.classification(feature_fl)
         anchor_points = self.anchor_points(samples).repeat(batch_size, 1, 1)
