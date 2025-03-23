@@ -5,6 +5,7 @@ import numpy as np
 import torchvision.transforms as transforms
 from torch.utils.data import Dataset
 import cv2
+from PIL import Image
 
 class SHHA(Dataset):
     def __init__(self, data_root, transform=None, train=False, patch=False, flip=False):
