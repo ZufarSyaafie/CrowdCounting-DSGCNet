@@ -1,4 +1,4 @@
-# DSGC-Net:A Dual-Stream Graph Convolutional Network for Crowd Counting via Feature Correlation Mining
+# DSGC-Net: A Dual-Stream Graph Convolutional Network for Crowd Counting via Feature Correlation Mining
 ## Overview🔍
 <div>
     <img src="assets/framework.jpg" width="95%" height="95%">
@@ -47,7 +47,7 @@ We evaluate the proposed method on three of the most widely used crowd counting 
 ## Getting Started🚀
 ### 1. Data Preparation
 First, prepare the dataset. Then, run the following command to generate the corresponding ground truth density distribution maps:
-```
+```bash
 python density_data_preparation/k_nearest_gaussian_kernel.py
 ```
 Immediately afterward, We use a list file to collect all the input images and their ground truth annotations in a counting dataset. When your dataset is organized as recommended in the following, the format of this list file is defined as:
@@ -76,7 +76,7 @@ DATA_ROOT/
 ```
 ### 2. Training
 The network can be trained using the train.py script. For training on ShanghaiTech PartA, use
-```
+```bash
 CUDA_VISIBLE_DEVICES=0 python train.py --data_root $DATA_ROOT \
     --dataset_file SHHA \
     --epochs 3500 \
@@ -92,7 +92,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py --data_root $DATA_ROOT \
 ```
 ### 3. Test
 You can prepare the data according to the previously mentioned dataset structures and directly use our trained weights to predict individuals' locations and the total crowd count (which will be displayed on the predicted images). Please run
-```
+```bash
 python run_test.py
 ```
 ## Friendly reminder😊
