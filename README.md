@@ -15,11 +15,11 @@ We evaluate the proposed method on three of the most widely used crowd counting 
 | P2PNet      | ICCV-2021   | VGG-16       | 52.7 / 85.1            | 6.2 / 9.9              | 85.3 / 154.5       |
 | TopoCount   | AAAI-2021   | VGG-16       | 61.2 / 104.6           | 7.8 / 13.7             | 89.0 / 159.0       |
 | LSC-CNN     | TPAMI-2021  | VGG-16       | 66.4 / 117.0           | 8.1 / 12.7             | 120.5 / 218.2      |
-| CLTR        | ECCV-2022   | ViT (DETR)   | 56.9 / 95.2            | 6.5 / 10.6             | 85.8 / 141.3       |
+| CLTR        | ECCV-2022   | DETR         | 56.9 / 95.2            | 6.5 / 10.6             | 85.8 / 141.3       |
 | Ctrans-MISN | PRAI-2022   | ViT          | 55.8 / 95.9            | 7.3 / 11.4             | 95.2 / 180.1       |
 | NDConv      | SPL-2022    | ResNet-50    | 61.4 / 104.2           | 7.8 / 13.8             | 91.2 / 165.6       |
 | AutoScale   | IJCV-2022   | VGG-16       | 65.8 / 112.1           | 8.6 / 13.9             | 104.4 / 174.2      |
-| PTCNet      | EAAI-2023   | Pyramid ViT  | <u>51.7</u> / 79.6      | 6.3 / 10.6             | <u>79.7</u> / **133.2** |
+| PTCNet      | EAAI-2023   | PVT          | <u>51.7</u> / 79.6      | 6.3 / 10.6             | <u>79.7</u> / **133.2** |
 | GMS         | TIP-2023    | HRNet        | 68.8 / 138.6           | 16.0 / 33.5            | 104.0 / 197.4      |
 | DMCNet      | WACV-2023   | VGG-16       | 58.5 / 84.6            | 8.6 / 13.7             | 96.5 / 164.0       |
 | VMambaCC    | arXiv-2024  | Mamba        | 51.9 / 81.3            | 7.5 / 12.5             | 88.4 / 144.7       |
