@@ -2,11 +2,11 @@
 ## Overview🔍
 **Abstract -** Deep learning-based crowd counting methods have achieved remarkable progress in recent years. However, in complex crowd scenarios, existing models still face challenges when adapting to significant density distribution differences between regions. Additionally, the inconsistency of individual representations caused by viewpoint changes and body posture differences further limits the counting accuracy of the models. To address these challenges, we propose DSGC-Net, a Dual-Stream Graph Convolutional Network based on feature correlation mining. DSGC-Net introduces a Density Approximation (DA) branch and a Representation Approximation (RA) branch. By modeling two semantic graphs, it captures the potential feature correlations in density variations and representation distributions. The DA branch incorporates a density prediction module that generates the density distribution map, and constructs a density-driven semantic graph based on density similarity. The RA branch establishes a representation-driven semantic graph by computing global representation similarity. Then, graph convolutional networks are applied to the two semantic graphs separately to model the latent semantic relationships, which enhance the model's ability to adapt to density variations and improve counting accuracy in multi-view and multi-pose scenarios. Extensive experiments on three widely used datasets demonstrate that DSGC-Net outperforms current state-of-the-art methods. In particular, we achieve MAE of 48.9 and 5.9 in ShanghaiTech Part A and Part B datasets, respectively.
 ## Datasets📚
-We evaluate the proposed method on three of the most widely used crowd counting datasets: ShanghaiTech PartA and PartB and UCF-QNRF.
+We evaluate the proposed method on three of the most widely used crowd counting datasets: ShanghaiTech Part A and Part B and UCF-QNRF.
 ## Experimental Results🏆
 ### Comparison with State-of-the-Art Methods
 
-| Method      | Venue       | Backbone     | SHTech PartA (MAE/MSE) | SHTech PartB (MAE/MSE) | UCF-QNRF (MAE/MSE) |
+| Method      | Venue       | Backbone     | SHTech Part A (MAE/MSE) | SHTech PartB (MAE/MSE) | UCF-QNRF (MAE/MSE) |
 |-------------|-------------|--------------|------------------------|------------------------|--------------------|
 | CSRNet      | CVPR-2018   | VGG-16       | 68.2 / 115.0           | 10.6 / 16.0            | - / -              |
 | BL          | ICCV-2019   | VGG-19       | 62.8 / 101.8           | 7.7 / 12.7             | 88.7 / 154.8       |
