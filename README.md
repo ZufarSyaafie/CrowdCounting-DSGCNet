@@ -1,6 +1,19 @@
 # DSGC-Net:A Dual-Stream Graph Convolutional Network for Crowd Counting via Feature Correlation Mining
 ## Overview🔍
+<div>
+    <img src="assets/framework.jpg" width="95%" height="95%">
+</div>
+
+**Figure 1. The overall framework of the proposed Dual-Stream Graph Convolutional Network (DSGC-Net).**
+
 **Abstract -** Deep learning-based crowd counting methods have achieved remarkable progress in recent years. However, in complex crowd scenarios, existing models still face challenges when adapting to significant density distribution differences between regions. Additionally, the inconsistency of individual representations caused by viewpoint changes and body posture differences further limits the counting accuracy of the models. To address these challenges, we propose DSGC-Net, a Dual-Stream Graph Convolutional Network based on feature correlation mining. DSGC-Net introduces a Density Approximation (DA) branch and a Representation Approximation (RA) branch. By modeling two semantic graphs, it captures the potential feature correlations in density variations and representation distributions. The DA branch incorporates a density prediction module that generates the density distribution map, and constructs a density-driven semantic graph based on density similarity. The RA branch establishes a representation-driven semantic graph by computing global representation similarity. Then, graph convolutional networks are applied to the two semantic graphs separately to model the latent semantic relationships, which enhance the model's ability to adapt to density variations and improve counting accuracy in multi-view and multi-pose scenarios. Extensive experiments on three widely used datasets demonstrate that DSGC-Net outperforms current state-of-the-art methods. In particular, we achieve MAE of 48.9 and 5.9 in ShanghaiTech Part A and Part B datasets, respectively.
+
+<div>
+    <img src="assets/vis.jpg" width="95%" height="95%">
+</div>
+
+**Figure 2. Visualizations examples. 1) The ground truth. 2) Prediction results of the proposed DSGC-Net. 3) The outputs of the Density Prediction (DP) module. 4) and 5) are the detailed comparisons of the prediction results of the baseline and the proposed DSGC-Net.**
+
 ## Datasets📚
 We evaluate the proposed method on three of the most widely used crowd counting datasets: ShanghaiTech Part A and Part B and UCF-QNRF.
 ## Experimental Results🏆
