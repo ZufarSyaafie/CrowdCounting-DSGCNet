@@ -1,5 +1,8 @@
 # DSGC-Net: A Dual-Stream Graph Convolutional Network for Crowd Counting via Feature Correlation Mining
 ## Overview🔍
+<div>
+    <img src="assets/framework.jpg" width="95%" height="95%">
+</div>
 
 
 **Figure 1. The overall framework of the proposed Dual-Stream Graph Convolutional Network (DSGC-Net).**
