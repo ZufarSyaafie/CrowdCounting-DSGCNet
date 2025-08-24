@@ -12,7 +12,7 @@
     <img src="assets/vis.jpg" width="95%" height="95%">
 </div>
 
-**Figure 2. Visualizations examples. 1) The ground truth. 2) Prediction results of the proposed DSGC-Net. 3) The outputs of the Density Prediction (DP) module. 4) and 5) are the detailed comparisons of the prediction results of the baseline and the proposed DSGC-Net.**
+**Figure 2. Visualization examples. 1) The ground truth. 2) Prediction results of the proposed DSGC-Net. 3) The outputs of the Density Prediction (DP) module. 4) and 5) are the detailed comparisons of the prediction results of the baseline and the proposed DSGC-Net.**
 
 ## Datasets📚
 We evaluate the proposed method on three of the most widely used crowd counting datasets: ShanghaiTech Part A and Part B and UCF-QNRF.
