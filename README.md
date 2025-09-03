@@ -1,4 +1,4 @@
-<h1 align="center">DSGC-Net: A Dual-Stream Graph Convolutional Network for Crowd Counting via Feature Correlation Mining</h2>
+<h1 align="center">DSGC-Net: A Dual-Stream Graph Convolutional Network for Crowd Counting via Feature Correlation Mining (PRCV 2025)</h2>
 
 <p align="center">
   <a href="https://arxiv.org/abs/2509.02261">
