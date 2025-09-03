@@ -49,7 +49,7 @@ We evaluate the proposed method on three of the most widely used crowd counting 
 |CrowdFPN     | Ap.Int.-2025 | Twins     | 52.5 / 88.5            | 6.5 / 9.9               | 81.2 / 157.3       |
 | **Ours**    | -           | VGG-16       | **48.9** / **77.8**    | <u>5.9</u> / **9.3**    | **79.3** / <u>133.9</u> |
 
-**Bold** indicates the best performance; <u>underline</u> indicates the second-best.
+**Bold** indicates the best performance.
 
 
 ## Getting Started🚀
